@@ -37,10 +37,20 @@
           <td>slice: 1: 5</td>
           <td>{{ arreglo | slice: 1:5 }}</td>
         </tr>
+        <tr>
+          <td>{{ PI }}</td>
+          <td>number:'3.0-0'</td>
+          <td>{{ PI | number:'3.0-0'}}</td>
+        </tr>
+        <tr>
+          <td>{{ PI }}</td>
+          <td>number:'.0-2'</td>
+          <td>{{ PI | number:'.0-2'}}</td>
+        </tr>
       </tbody>
     </table>
 
-    <h4>Slice</h4>
+    <h4>Slice <small>slice: 5: 20</small></h4>
     <ul>
       <li *ngFor="let item of arreglo | slice: 5:20">{{ item }}</li>
     </ul>
