@@ -18,6 +18,8 @@ export class AppComponent {
     }, 4500);
   });
 
+  fecha = new Date();
+
   heroe = {
     nombre: 'logan',
     clave: 'wolverine',
