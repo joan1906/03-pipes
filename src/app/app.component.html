@@ -97,6 +97,18 @@
           <td>date: 'd/MM/yyyy - hh:mm:ss a'</td>
           <td>{{ fecha | date: 'd/MM/yyyy - hh:mm:ss a' }}</td>
         </tr>
+        <tr>
+          <td>{{ nombre }}</td>
+          <td>
+            contrasenia: {{activar}}
+            <br>
+            <button (click)="activar = !activar"
+                    class="btn btn-outline-primary">
+              activar/desactivar
+            </button>
+          </td>
+          <td>{{ nombre | hidename: activar}}</td>
+        </tr>
       </tbody>
     </table>
 

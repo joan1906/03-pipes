@@ -12,6 +12,7 @@ export class AppComponent {
   PI: number = Math.PI;
   porcentaje: number = 0.234;
   salario: number = 1234.5;
+  activar: boolean = true;
 
   videoUrl: string = 'https://www.youtube.com/embed/mfZIpSj_ZmE';
 
